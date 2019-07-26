@@ -1,0 +1,144 @@
+@import "./toastr.scss";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap');
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v38/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2'),
+         url(https://fonts.gstatic.com/s/materialicons/v38/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff) format('woff'); /*ie11 support*/
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga'; /*edge and ie11 support*/
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#main {
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-family: 'Noto Sans';
+}
+
+p, th, td, li, dd, dt, ul, ol, blockquote, q, acronym, abbr, a, input, select, textarea, button, pre {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans';
+}
+
+/* Remove default outlines [such as button highlights] */
+* {
+	outline: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+//ag grid date filter custom css
+.agGrid-clear-button {
+    position: absolute;
+    right: 30px;
+    top: 4px;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.agGrid-calendar {
+    background-color: transparent;
+    height: 24px;
+    position: absolute;
+    right: 5px;
+    pointer-events: none;
+    font-size: 18px;
+}
+
+.ag-overlay-panel {
+    display: table;
+    height: 100%;
+    pointer-events: none;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.ag-menu {
+    overflow: visible;
+}
+
+.agGrid-popover {
+    z-index: 1;
+    position: fixed;
+    top: 70;
+    animation: fadein 200ms;
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
+
+.date-modal-mask {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.ag-root .ag-cell select {
+    height: 24px;
+}
+
+.header-cell-resizer > div:first-of-type + div + div + div + div {
+    height: 20px!important;
+    top: 0!important;
+    background-color: #eeeeee
+}
+
+.header-cell-resizer > div:first-of-type {
+    display: block;
+    width: 100px;
+    z-index: 1;
+    margin: 0 auto;
+}
