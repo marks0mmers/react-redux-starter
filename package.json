@@ -17,6 +17,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-observable": "^1.1.0",
     "rxjs": "^6.5.2",
+    "styled-components": "^4.3.2",
     "toastr": "^2.1.4"
   },
   "devDependencies": {
@@ -26,6 +27,7 @@
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.5",
     "@types/react-redux": "^7.1.1",
+    "@types/styled-components": "^4.1.18",
     "@types/toastr": "^2.1.37",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
